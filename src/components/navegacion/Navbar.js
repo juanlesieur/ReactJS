@@ -4,9 +4,11 @@ import {Link} from 'react-router-dom';
 const navbar = () => {
   return (
   <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Unalome</a>
+      <Link to='/'>
+          <img src='./PSX_20220123_175005.jpg' width='70'/>
+      </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
