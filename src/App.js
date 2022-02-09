@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './components/navegacion/Navbar.js';
 import Inicio from './components/paginas/Inicio.js';
 import Footer from './components/navegacion/Footer';
-import ItemListContainer from './components/ItemListContainer';
+import {ItemListContainer} from './components/ItemListContainer';
 
 
 function App() {
