@@ -1,0 +1,39 @@
+.box-cart{
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    height: auto;
+    background: white;
+    right: 700px;
+    top: 75px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 /20%), 0px 4px 5px 0px rgb(0 0 0 /14%) 0px 1px 10px 0px rgb(0 0 0 /12%);
+}
+
+.box-cart * {
+    color: black;
+}
+
+.box-cart .item-cart-list:nth-of-type(1){
+    border-top: 1px solid #d6d6d6;
+}
+
+.item-cart-img img {
+    width: 100%;
+}
+
+.box-cart{
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.cart-container svg:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cart-container svg{
+    transition: all 0.23s ease;
+}
