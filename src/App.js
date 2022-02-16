@@ -1,10 +1,10 @@
 import './App.css';
-import AppRouter from './components/AppRouter/AppRouter';
+import AppRouter from "../../ecommerce2022/src/components/navegacion/AppRouter/AppRouter";
 
 function App() {
   return (
     <div className="App">
-    <AppRouter />
+    <AppRouter/>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "../navegacion/NavBar/Navbar";
+import NavBar from "../NavBar/Navbar";
 import HomePage from "../../paginas/HomePage/Inicio";
-import ContactPage from "../../paginas/ContactPage/ContactPage";
 import NotFoundPage from "../../paginas/NotFoundPage/NotFoundPage";
 import ProductsPage from "../../paginas/ProductsPage/ProductsPage";
 import AboutUsPage from "../../paginas/AboutUsPage/AboutUsPage";
@@ -10,7 +9,6 @@ import ItemDetailPage from "../../paginas/ItemDetailPage/ItemDetailPage";
 import CartPage from "../../paginas/CartPage/CartPage";
 import CategoriesPage from "../../paginas/CategoriesPage/CategoriesPage";
 import { CartProviden } from "../CartContext/CartContext";
-import ContactPage from "../../paginas/ContactPage/ContactPage";
 
 export default function AppRouter () {
     return (
@@ -20,7 +18,6 @@ export default function AppRouter () {
         <Routes>
             <Route path="/products/:id" element = {<ItemDetailPage/>}/>
             <Route path="/:category/" element = {<CategoriesPage/>}/>
-            <Route path="/contact" element = {<ContactPage/>}/>
             <Route path="/cart" element = {<CartPage/>}/>
             <Route path="/aboutus" element = {<AboutUsPage/>}/>
             <Route path="/product" element = {<ProductsPage/>}/>

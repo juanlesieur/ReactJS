@@ -1,8 +1,7 @@
 import React from "react";
-import "./NavBar.css";
-import 'bootstrap/dist/css/bootstrap.css';
+import "./Navbar.css";
 import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
-import CartWidget from "../CartWidget/CartWidget";
+import CartWidget from "../CartWidget/Cartwidget";
 import "../CartWidget/CartWidget.css";
 import {Link} from "react-router-dom";
 
