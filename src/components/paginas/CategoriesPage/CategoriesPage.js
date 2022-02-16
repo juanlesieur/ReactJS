@@ -1,10 +1,10 @@
 import React from "react";
-import FilteredProducts from '../../components/ProductsFiltered/ProductsFiltered'
+import ProductsFiltered from "../../navegacion/ProductsFiltered/ProductsFiltered";
 
 export default function CategoriesPage () {
     return(
         <>
-            <FilteredItems/>
+            <ProductsFiltered/>
         </>
     )
 }

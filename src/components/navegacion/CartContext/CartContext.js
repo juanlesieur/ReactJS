@@ -15,24 +15,20 @@ const CartProviden = ({children}) => {
     }
 
     
-    const addProduct = (product, quantity) =>{
+    const addProducts = (product, quantity) => {
         isInCart(product.id)
             ?
-            setProducts(products.map((prod) =>{
-                if(prod.id===product.id) {
-                    setTotalQty (prod.quantity + totalQty)
-                }
-                return prod
-            }))
-                :
-            setProducts([...products,product])
-            setTotalPrice (totalPrice + product.price * product.quantity)
-            }
-            
-            const removeProducts = (id) => {
-                setProducts (products.filter(product => product.id !==id))
-            }
-    
+            setProducts(products.map((prod) => {
+            if(prod.id === product.id) {
+            setTotalQty (prod.quantity + totalQty)
+        }
+        return prod
+        }))
+            :
+        setProducts([...products, product])
+        addProductStorage(product)
+        setTotalPrice (totalPrice + product.price * product.quantity)
+        }
     const data = {
         products,
         addProducts,

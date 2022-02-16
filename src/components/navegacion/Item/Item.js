@@ -2,8 +2,7 @@ import React from 'react'
 import '../Item/Item.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
-import { Button } from '@mui/material/Button';
-import ItemCount from "../../components/ItemCount/ItemCount"
+import ItemCount from "../../navegacion/ItemCount/ItemCount";
 
 const theme = createTheme ({
   palette: {
@@ -36,10 +35,10 @@ export default function Item ({data}) {
                   </div>
                   <ItemCount stock={data.stock} onAdd={onAdd}/>
               </div>
-              <Button variant="contained" color="background" style={{marginBottom: 10, textDecoration: 'none'}}>
+              <button variant="contained" color="background" style={{marginBottom: 10, textDecoration: 'none'}}>
                 <Link to={`/products/${data.id}`} style={{textDecoration: 'none'}}>Ver Detalle</Link>
-              </Button>
-              <Button variant="contained" color="background">Agregar al carrito</Button>
+              </button>
+              <button variant="contained" color="background">Agregar al carrito</button>
         </div>
       </ThemeProvider>
     </div>
