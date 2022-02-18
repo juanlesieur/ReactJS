@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import ItemDetail from "../ItemDetail/ItemDetail";
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 export default function ContainerItemDetail () {
@@ -64,10 +66,10 @@ export default function ContainerItemDetail () {
     })
 
     useEffect(() => {
-        getProduct.then(resultProduct => {
-            resultsProducts.filter(resultProduct=> {
-            if (resultProduct.id === parseInt(id)) {
-                setProduct(resultProduct)
+        getProduct.then(resultsProducts => {
+            resultsProducts.filter(resultsProducts => {
+            if (resultsProducts.id === parseInt(id)) {
+                setProduct(resultsProducts)
                 setLoader(false)
             }
         })

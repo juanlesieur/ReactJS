@@ -15,7 +15,7 @@ import CircularProgress from '@mui/material/CircularProgress';
         name: 'Mate de Flor con bandeja',
         price: 1500,
         stock: 10,
-        img:'matebandejaflor.jpg',
+        img:'./matebandejaflor.jpg',
         category: "mate y bandeja",
     },
     {
@@ -23,7 +23,7 @@ import CircularProgress from '@mui/material/CircularProgress';
         name: 'Mate de Hoja con bandeja',
         price: 1400,
         stock: 20,
-        img: 'matebandejahoja.jpg',
+        img: './matebandejahoja.jpg',
         category: "mate y bandeja",
     },
     {
@@ -31,7 +31,7 @@ import CircularProgress from '@mui/material/CircularProgress';
         name: 'Mate de Buho',
         price: 800,
         stock: 30,
-        img: 'matebuho.jpg',
+        img: './matebuho.jpg',
         category: "mate",
     },
     {
@@ -39,7 +39,7 @@ import CircularProgress from '@mui/material/CircularProgress';
         name: 'Mate de Flor',
         price: 800,
         stock: 20,
-        img: 'mateflor.jpg',
+        img: './mateflor.jpg',
         category: "mate",
     },
     {
@@ -47,7 +47,7 @@ import CircularProgress from '@mui/material/CircularProgress';
         name: 'Mate Ovalado Hoja',
         price: 1000,
         stock: 15,
-        img: 'mateovahoja.jpeg',
+        img: './mateovahoja.jpeg',
         category: "mate especial",
     },
     {
@@ -55,7 +55,7 @@ import CircularProgress from '@mui/material/CircularProgress';
         name: 'Mate Triangular Hoja',
         price: 1000,
         stock: 10,
-        img: 'matetrianhoja.jpeg',
+        img: './matetrianhoja.jpeg',
         category: "mate especial",
     },
     ]
@@ -63,7 +63,7 @@ import CircularProgress from '@mui/material/CircularProgress';
     const getProducts = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(dataProducts)
-        }, 2000)
+        }, 1000)
     })
 
     useEffect(() => {

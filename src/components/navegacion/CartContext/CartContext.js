@@ -26,7 +26,6 @@ const CartProviden = ({children}) => {
         }))
             :
         setProducts([...products, product])
-        addProductStorage(product)
         setTotalPrice (totalPrice + product.price * product.quantity)
         }
     const data = {
@@ -34,7 +33,6 @@ const CartProviden = ({children}) => {
         addProducts,
         totalPrice,
         totalQty,
-        removeProducts,
     }
     
     return(
@@ -46,3 +44,4 @@ const CartProviden = ({children}) => {
 
 export { CartProviden }
 export default CartContext
+

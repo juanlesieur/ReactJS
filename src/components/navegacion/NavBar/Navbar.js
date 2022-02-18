@@ -17,9 +17,9 @@ export default function NavBar () {
                     <Nav className="me-auto">
                       <Nav.Link href="/">Home</Nav.Link>
                       <NavDropdown title="Products" id="basic-nav-dropdown">
-                      <NavDropdown.Item href="/buzos/">Mates</NavDropdown.Item>
-                      <NavDropdown.Item href="/remeras/">Mates especiales</NavDropdown.Item>
-                      <NavDropdown.Item href="/aritos/">Mates con Bandejas</NavDropdown.Item>
+                      <NavDropdown.Item href="/Mates/">Mates</NavDropdown.Item>
+                      <NavDropdown.Item href="/Mates Especiales/">Mates especiales</NavDropdown.Item>
+                      <NavDropdown.Item href="/Mates con bandeja/">Mates con Bandejas</NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item href="/">Ver todos los productos</NavDropdown.Item>
                       </NavDropdown>
