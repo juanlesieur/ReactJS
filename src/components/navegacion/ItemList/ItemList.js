@@ -6,7 +6,7 @@ const ItemList = () => {[
     name: 'Mate de Flor con bandeja',
     price: 1500,
     stock: 10,
-    img:'./matebandejaflor.jpg',
+    img:'../Assets/matebandejaflor.jpg',
     category: "mate y bandeja",
 },
 {
@@ -14,7 +14,7 @@ const ItemList = () => {[
     name: 'Mate de Hoja con bandeja',
     price: 1400,
     stock: 20,
-    img: './matebandejahoja.jpg',
+    img: '../Assets/matebandejahoja.jpg',
     category: "mate y bandeja",
 },
 {
@@ -22,7 +22,7 @@ const ItemList = () => {[
     name: 'Mate de Buho',
     price: 800,
     stock: 30,
-    img: './matebuho.jpg',
+    img: '../Assets/matebuho.jpg',
     category: "mate",
 },
 {
@@ -30,7 +30,7 @@ const ItemList = () => {[
     name: 'Mate de Flor',
     price: 800,
     stock: 20,
-    img: './mateflor.jpg',
+    img: '../Assets/mateflor.jpg',
     category: "mate",
 },
 {
@@ -38,7 +38,7 @@ const ItemList = () => {[
     name: 'Mate Ovalado Hoja',
     price: 1000,
     stock: 15,
-    img: './mateovahoja.jpeg',
+    img: '../Assets/mateovahoja.jpeg',
     category: "mate especial",
 },
 {
@@ -46,7 +46,7 @@ const ItemList = () => {[
     name: 'Mate Triangular Hoja',
     price: 1000,
     stock: 10,
-    img: './matetrianhoja.jpeg',
+    img: '../Assets/matetrianhoja.jpeg',
     category: "mate especial",
 },
 ]
