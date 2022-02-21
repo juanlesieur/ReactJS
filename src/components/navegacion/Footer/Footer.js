@@ -1,12 +1,55 @@
-import React from 'react';
-import "../Footer/Footer.css";
+import React from "react";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import "./Footer.css";
 
-const Footer = () => {
+function Footer() {
   return (
-    <footer>
-      <h3>Unalome Magia! Todos los derechos reservados</h3>
-    </footer>
-  )
+    <div className="main-footer">
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <h4 className="titulos-footer">Unalome Magia!</h4>
+            <ui className="list-unstyled">
+              <li>Buenos Aires, Argentina</li>
+            </ui>
+          </div>
+          <div className="col">
+            <h4 className="titulos-footer">Redes Sociales</h4>
+            <ui className="list-unstyled">
+            <div className="contenedor">
+              <li className="flex-icons">Facebook</li>
+              <FacebookIcon/>
+            </div>
+            <div className="contenedor">
+              <li>Instagram</li>
+              <InstagramIcon/>
+            </div>
+            <div className="contenedor">
+              <li>Twitter</li>
+              <TwitterIcon/>
+            </div>
+            </ui>
+          </div>
+          <div className="col">
+            <h4 className="titulos-footer">Sobre Nosotros</h4>
+            <ui className="list-unstyled">
+              <li>Contact</li>
+              <li>About us</li>
+              <li>Work with us</li>
+            </ui>
+          </div>
+        </div>
+        <hr />
+        <div className="row">
+          <p className="col-sm">
+            &copy;{new Date().getFullYear()} Juan Lesieur | All rights reserved 
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
