@@ -1,12 +1,11 @@
-import React from 'react'
+import { requirePropFactory } from "@mui/material"
 
-const ItemList = () => {[
-{
+const dataProducts = [{
     id: 1,
     name: 'Mate de Flor con bandeja',
     price: 1500,
     stock: 10,
-    img:'../Assets/matebandejaflor.jpg',
+    img: require('../Assets/matebandejaflor.jpg'),
     category: "mate y bandeja",
 },
 {
@@ -14,7 +13,7 @@ const ItemList = () => {[
     name: 'Mate de Hoja con bandeja',
     price: 1400,
     stock: 20,
-    img: '../Assets/matebandejahoja.jpg',
+    img: require('../Assets/matebandejahoja.jpg'),
     category: "mate y bandeja",
 },
 {
@@ -22,7 +21,7 @@ const ItemList = () => {[
     name: 'Mate de Buho',
     price: 800,
     stock: 30,
-    img: '../Assets/matebuho.jpg',
+    img: require('../Assets/matebuho.jpg'),
     category: "mate",
 },
 {
@@ -30,7 +29,7 @@ const ItemList = () => {[
     name: 'Mate de Flor',
     price: 800,
     stock: 20,
-    img: 'mateFlor.jpg',
+    img: require('../Assets/mateFlor.jpg'),
     category: "mate",
 },
 {
@@ -38,7 +37,7 @@ const ItemList = () => {[
     name: 'Mate Ovalado Hoja',
     price: 1000,
     stock: 15,
-    img: '../Assets/mateovahoja.jpeg',
+    img: require('../Assets/mateovahoja.jpeg'),
     category: "mate especial",
 },
 {
@@ -46,10 +45,9 @@ const ItemList = () => {[
     name: 'Mate Triangular Hoja',
     price: 1000,
     stock: 10,
-    img: '../Assets/matetrianhoja.jpeg',
+    img: require('../Assets/matetrianhoja.jpeg'),
     category: "mate especial",
 },
 ]
-}
 
-export default ItemList
+export default dataProducts

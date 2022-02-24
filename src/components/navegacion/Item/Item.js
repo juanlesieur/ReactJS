@@ -25,7 +25,7 @@ export default function Item ({data}) {
       <ThemeProvider theme={theme}>
         <span className="stock-text">Stock : {data.stock}</span>
         <div className="item-image">
-          <img src={`../../../Assets/${data.img}`} alt="product image"/>
+          <img src={data.img} alt="product image"/>
         </div>
         <div className="item-info">
               <h2>{data.name}</h2>

@@ -1,14 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "../NavBar/Navbar";
-import HomePage from "../../paginas/HomePage/Inicio";
-import NotFoundPage from "../../paginas/NotFoundPage/NotFoundPage";
-import ProductsPage from "../../paginas/ProductsPage/ProductsPage";
-import AboutUsPage from "../../paginas/AboutUsPage/AboutUsPage";
-import Footer from "../../navegacion/Footer/Footer";
-import ItemDetailPage from "../../paginas/ItemDetailPage/ItemDetailPage";
-import CartPage from "../../paginas/CartPage/CartPage";
-import CategoriesPage from "../../paginas/CategoriesPage/CategoriesPage";
+import Footer from "../Footer/Footer"
 import { CartProviden } from "../CartContext/CartContext";
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
+import Cart from "../Cart";
 
 export default function AppRouter () {
     return (
@@ -16,13 +12,12 @@ export default function AppRouter () {
         <CartProviden>
         <NavBar/>
         <Routes>
-            <Route path="/products/:id" element = {<ItemDetailPage/>}/>
-            <Route path="/:category/" element = {<CategoriesPage/>}/>
-            <Route path="/cart" element = {<CartPage/>}/>
-            <Route path="/aboutus" element = {<AboutUsPage/>}/>
-            <Route path="/product" element = {<ProductsPage/>}/>
-            <Route path="/" element = {<HomePage/>}/>
-            <Route path="/" element = {<NotFoundPage/>}/>
+            <Route path="/products/:id" element = {<ItemDetailContainer/>}/>
+            <Route path="/:category/" element = {<ItemListContainer/>}/>
+            <Route path="/cart" element = {<Cart/>}/>
+            {/*<Route path="/aboutus" element = {<AboutUsPage/>}/>*/}
+            <Route path="/" element = {<ItemListContainer/>}/>
+            {/*<Route path="/" element = {<NotFoundPage/>}/>*/}
         </Routes>
         </CartProviden>
         <Footer/>
