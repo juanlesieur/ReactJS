@@ -49,7 +49,7 @@ export default function ItemDetail({data}) {
                     <div>
                         <Grid container spacing={2}>
                             <Grid item xs={8} className="container-img-detalle">
-                                <img src={`../Assets/${data.img}`}/>
+                                <img src={data.img}/>
                             </Grid>
                             <Grid item xs={4}>
                                 <h2>{data.name}</h2>
