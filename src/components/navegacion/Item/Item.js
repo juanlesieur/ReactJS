@@ -36,7 +36,7 @@ export default function Item ({data}) {
                   <ItemCount stock={data.stock} onAdd={onAdd}/>
               </div>
               <button variant="contained" color="background" style={{marginBottom: 10, textDecoration: 'none'}}>
-                <Link to={`/products/${data.id}`} style={{textDecoration: 'none'}}>Ver Detalle</Link>
+                <Link className="link--detalle__color" to={`/products/${data.id}`} style={{textDecoration: 'none'}}>Ver Detalle</Link>
               </button>
               <button variant="contained" color="background">Agregar al carrito</button>
         </div>

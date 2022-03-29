@@ -1,7 +1,9 @@
+import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './ModalCart.css';
+import CartContext from '../CartContext/CartContext';
 
 
 const theme = createTheme({
@@ -16,7 +18,9 @@ const theme = createTheme({
 });
 
 
-export default function ModalCart ({products, total, totalQty, removeProduct}) {
+export default function ModalCart ({products, total}) {
+
+    const {clearCart} = useContext (CartContext)
 
     return(
         <div className="box-cart">
@@ -34,11 +38,11 @@ export default function ModalCart ({products, total, totalQty, removeProduct}) {
             return (
                 <div className='item-cart-list' key={product.id}>
                     <div className='item-cart-img'>
-                        <img  src={`../assets/${product.image}`} />
+                        <img  src={product.image} />
                     </div>
                         <p>{product.name}</p>
                         <p>${product.price}</p>
-                        <span>Cant: {totalQty}</span>
+                        <span>Cant: {total}</span>
                 </div>
             )
         })}
@@ -46,7 +50,7 @@ export default function ModalCart ({products, total, totalQty, removeProduct}) {
                 <div className='container-finished'>
                         <p>TOTAL:</p>
                         <span>$ {total}</span>
-                        <Button variant="outlined" color="base" onClick= {removeProduct}> Borrar producto</Button>
+                        <Button variant="outlined" color="base" onClick= {clearCart}> Borrar producto</Button>
                         <Link to="/cart">
                         <Button variant="contained" color="background">Finalizar compra</Button>
                         </Link>

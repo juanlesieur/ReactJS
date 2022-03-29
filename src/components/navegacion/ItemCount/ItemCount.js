@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 import  "../ItemCount/ItemCount.css";
 import Button from '@mui/material/Button';
 
-export default function ItemCount(onAdd) {
+export default function ItemCount({stock, onAdd}) {
     const [itemCount, setItemCount] = useState(0)
 
     const updateItem = () => {
-        if(itemCount < 5) {
+        if(itemCount < stock) {
             setItemCount(itemCount + 1)
             onAdd(itemCount + 1)
         }

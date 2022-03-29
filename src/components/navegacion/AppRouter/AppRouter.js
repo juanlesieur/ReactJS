@@ -15,9 +15,7 @@ export default function AppRouter () {
             <Route path="/products/:id" element = {<ItemDetailContainer/>}/>
             <Route path="/:category/" element = {<ItemListContainer/>}/>
             <Route path="/cart" element = {<Cart/>}/>
-            {/*<Route path="/aboutus" element = {<AboutUsPage/>}/>*/}
             <Route path="/" element = {<ItemListContainer/>}/>
-            {/*<Route path="/" element = {<NotFoundPage/>}/>*/}
         </Routes>
         </CartProviden>
         <Footer/>

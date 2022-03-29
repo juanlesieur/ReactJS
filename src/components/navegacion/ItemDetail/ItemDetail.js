@@ -48,8 +48,11 @@ export default function ItemDetail({data}) {
                 <ThemeProvider theme={theme}>
                     <div>
                         <Grid container spacing={2}>
-                            <Grid item xs={8} className="container-img-detalle">
+                            <Grid item xs={4} className="container-img-detalle">
                                 <img src={data.img}/>
+                            </Grid>
+                            <Grid item xs={4}>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea ex earum ut, vitae neque fugit nemo consectetur repellat vel. Obcaecati dignissimos quis iusto hic molestiae vero cumque quod libero.</p>
                             </Grid>
                             <Grid item xs={4}>
                                 <h2>{data.name}</h2>

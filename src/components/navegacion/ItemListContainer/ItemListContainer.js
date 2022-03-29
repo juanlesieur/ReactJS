@@ -10,6 +10,7 @@ import dataProducts from '../../productos';
     const ItemListContainer = () => {
     const [loader, setLoader] = useState(true)
     const [products, setProducts] = useState([])
+    const {category} = useParams()
    
 
     const getProducts = new Promise((resolve, reject) => {
